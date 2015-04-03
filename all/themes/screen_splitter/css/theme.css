@@ -1,0 +1,167 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  width: 100%; }
+
+html {
+  font-size: 1em;
+  font-size: 43.75%; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 992px) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  font-size: 1.8em; }
+
+h1 {
+  font-size: 3.6rem; }
+
+h2 {
+  font-size: 3.2rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.4rem; }
+
+h5 {
+  font-size: 2rem; }
+
+h6 {
+  font-size: 1.8rem; }
+
+.master-wrapper {
+  height: 400%;
+  width: 500%;
+  will-change: transform; }
+
+.view-all .master-wrapper {
+  height: 100%;
+  width: 100%; }
+
+section[class^='view-'] {
+  border: 1px solid #000;
+  display: inline-block;
+  float: left;
+  height: 25%;
+  overflow: hidden;
+  perspective: 5000px;
+  position: relative;
+  width: 20%; }
+  section[class^='view-'] .view--content-container {
+    height: 100%;
+    width: 100%;
+    perspective: 1000;
+    transform-style: preserve-3d;
+    transition: all .75s ease-in-out;
+    position: relative; }
+  section[class^='view-'] .view--content__front, section[class^='view-'] .view--content__back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  section[class^='view-'] .view--content__front {
+    backface-visibility: hidden;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+    section[class^='view-'] .view--content__front img {
+      height: auto;
+      margin: auto;
+      width: 100%; }
+  section[class^='view-'] .view--content__back {
+    transform: rotateY(180deg);
+    background-color: #aaa;
+    color: #fff;
+    display: block;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    transform: rotateY(180deg);
+    width: 100%; }
+
+.swiper-container {
+  height: 100%;
+  width: 768px; }
+  .swiper-container .swiper-slide {
+    align-items: center;
+    background: #ed2024;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center; }
+    .swiper-container .swiper-slide .swiper-slide-image-container {
+      display: block;
+      height: 100%;
+      overflow: scroll;
+      width: 100%;
+      -webkit-overflow-scrolling: touch; }
+      .swiper-container .swiper-slide .swiper-slide-image-container img {
+        height: auto;
+        width: 100%; }
+
+.flip {
+  transform: rotateY(180deg) !important; }
+
+.full-screen {
+  background: url("../img/BI.jpg") top left no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  .full-screen img,
+  .full-screen video {
+    width: 100%; }
+
+.modal-backdrop.in {
+  z-index: -1; }
+
+.modal-content {
+  opacity: .9; }
+
+.modal-footer {
+  font-size: 1.5em; }
+
+.ipad-select {
+  height: 500px;
+  width: 100%; }
+  .ipad-select .ipad-select--device {
+    float: left;
+    height: 25%;
+    width: 20%; }
+    .ipad-select .ipad-select--device .ipad-select--device-chosen {
+      background: #fff;
+      border: 1px solid #000;
+      color: #000;
+      display: block;
+      font-size: 2em;
+      height: 100%;
+      padding-top: 33%;
+      text-align: center;
+      width: 100%; }
+      .ipad-select .ipad-select--device .ipad-select--device-chosen:hover {
+        background: #f3f3f3;
+        text-decoration: none; }
+
+.control-panel {
+  width: 50%;
+  height: 300px;
+  left: 50%;
+  position: absolute;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.7) l; }
