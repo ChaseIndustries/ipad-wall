@@ -1,0 +1,32 @@
+name = Screen Splitter
+description = A theme for Screen Splitter web-app
+core = 7.x
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+
+regions[full_screen]     = 'Full Screen'
+regions[multi_screen]    = 'Multi Screens'
+regions[administration]  = 'Administration'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/theme.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = 'js/plugins/bootstrap.js'
+scripts[] = 'js/plugins/fastclick.js'
+scripts[] = 'js/plugins/html5.js'
+scripts[] = 'js/plugins/jquery.touchSwipe.min.js'
+scripts[] = 'js/plugins/modernizr.custom.js'
+scripts[] = 'js/plugins/respond.min.js'
+scripts[] = 'js/plugins/swiper.min.js'
